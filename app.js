@@ -1,6 +1,16 @@
-document.write('Hello world')
-alert('Hello world!')
-console.log('Hello people')
+
+const name = 'Ocee\'s courses are the best';
+console.log(name);
+
+
+
+
+
+
+
+
+
+
 
 
 
