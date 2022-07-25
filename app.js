@@ -35,7 +35,7 @@ number--;
 
 const slices = 10;
 const children = 3;
-const amount = slices / ;
+const amount = slices / children ;
 
 console.log(amount);
 
