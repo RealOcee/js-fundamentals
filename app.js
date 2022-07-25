@@ -20,24 +20,37 @@
 // +=, -=, /=, *=, ++, --, %
 // Modulus (%) operator returns the remainder after integer division
 
-let number = 40;
-number += 5;
-number += 5;
-number += 5;
-number += 5;
-number += 5;
-number += 5;
-number += 5;
-number -= 5;
-number ++;
-number--;
-number--;
+// let number = 40;
+// number += 5;
+// number += 5;
+// number += 5;
+// number += 5;
+// number += 5;
+// number += 5;
+// number += 5;
+// number -= 5;
+// number ++;
+// number--;
+// number--;
 
-const slices = 10;
-const children = 3;
-const amount = slices / children ;
+// const slices = 10;
+// const children = 3;
+// const amount = slices % children;
 
-console.log(amount);
+// const random = 4 + 4 + 6 * 8
+// const random2 = (4 + 4 + 6) * 8
+
+// console.log(random);
+// console.log(random2);
+// console.log(random);
+
+
+let number3 = '10';
+let number4 = '15';
+
+const result2 = number3 - number4;
+console.log(result2);
+
 
 
 
