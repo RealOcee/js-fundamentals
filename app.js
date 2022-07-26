@@ -45,13 +45,51 @@
 // console.log(random);
 
 
-let number3 = '10';
-let number4 = '15';
+// let number3 = '10';
+// let number4 = '15';
 
-const result2 = number3 - number4;
-console.log(result2);
+// const result2 = number3 - number4;
+// console.log(result2);
 
 
+// Arrays, Functions and objects
+
+// Arrays - [], 0 index based
+
+// const friend1 = 'Ocee';
+// const friend2 = 'Ocee';
+// const friend3 = 'Ocee';
+// const friend4 = 'Ocee';
+// const friend5 = 'Ocee';
+
+// const friends = ['ocee', 12, 'peter', 'bob', 'susy', 45, undefined, null];
+
+// let bestfriend = friends[2];
+// friends [4] = 'anna';
+// console.log(friends);
+// console.log(friends[4]);
+
+// console.log(bestfriend);
+
+// console.log(friends[3]);
+
+
+// Arrays, Functions and objects
+// Functions - declare, invoke
+
+function hello() {
+    // logic
+    console.log('Hey There Bob');
+    console.log('Hello There Anna');
+    console.log('Greet There Susy');
+}
+
+// greet bob
+hello();
+// greet anna
+hello();
+// greet susy
+hello();
 
 
 
