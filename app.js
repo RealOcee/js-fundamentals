@@ -81,18 +81,34 @@
 // arguments - when invokes/call/run
 // use vars/values, multiples params, undefined
 
+// function greet(name) {
+//     console.log('Hello There ' + name );
+// }
 
-function greet(name) {
-    console.log('Hello There ' + name );
+// // greet bob
+// greet('Bob');
+// // greet anna
+// greet('Anna');
+// // greet susy
+// greet('Susy');
+
+
+
+// Arrays, Functions and objects
+// return
+// default, undefined, shortcuts, ignores after
+
+const wallHeight = 80;
+
+function calculate(value) {
+    // const newValue = value * 2.54;
+    return value * 2.54;
 }
+const width = calculate(100);
+const height = calculate(wallHeight);
 
-// greet bob
-greet('Bob');
-// greet anna
-greet('Anna');
-// greet susy
-greet('Susy');
-
+const dimensions = [width, height];
+console.log(dimensions);
 
 
 
