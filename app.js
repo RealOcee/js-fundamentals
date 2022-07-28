@@ -76,20 +76,26 @@
 
 // Arrays, Functions and objects
 // Functions - declare, invoke
+// params - when declares/define
+// placeholders, local vars
+// arguments - when invokes/call/run
+// use vars/values, multiples params, undefined
 
-function hello() {
-    // logic
-    console.log('Hey There Bob');
-    console.log('Hello There Anna');
-    console.log('Greet There Susy');
+
+function greet(name) {
+    console.log('Hello There ' + name );
 }
 
 // greet bob
-hello();
+greet('Bob');
 // greet anna
-hello();
+greet('Anna');
 // greet susy
-hello();
+greet('Susy');
+
+
+
+
 
 
 
