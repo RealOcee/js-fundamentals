@@ -251,6 +251,8 @@ for (let number = 11; number >= 0; number--) {
 }
 
 
+// - - - The end of JS fundamentals - - -
+
 
 
 
