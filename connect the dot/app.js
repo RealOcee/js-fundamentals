@@ -24,6 +24,8 @@ console.log(text.slice(-5));
 
 
 
+
+
 // const person = {
 //     name: 'andrew', // property
 //     greeting() {
