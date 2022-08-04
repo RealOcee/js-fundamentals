@@ -33,6 +33,10 @@
 // console.log(value);
 
 
+// Array Properties and Methods
+let names = ['andrew', 'ase', 'odus', 'lamosi', 'ik'];
+
+
 
 
 
