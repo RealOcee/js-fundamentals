@@ -36,6 +36,15 @@
 // Array Properties and Methods
 let names = ['andrew', 'ase', 'odus', 'lamosi', 'ik'];
 
+//length
+console.log(names.length);
+console.log(names[names.length -1]);
+
+//concat 
+const lastNames = ['rice', 'beans', 'yam'];
+const allNames = names.concat(lastNames);
+console.log(allNames);
+
 
 
 
