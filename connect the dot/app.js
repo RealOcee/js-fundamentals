@@ -33,17 +33,61 @@
 // console.log(value);
 
 
-// Array Properties and Methods
-let names = ['andrew', 'ase', 'odus', 'lamosi', 'ik'];
+// // Array Properties and Methods
+// let names = ['andrew', 'ase', 'odus', 'lamosi', 'ik'];
 
-//length
-console.log(names.length);
-console.log(names[names.length -1]);
+// //length
+// console.log(names.length);
+// console.log(names[names.length -1]);
 
-//concat 
-const lastNames = ['rice', 'beans', 'yam'];
-const allNames = names.concat(lastNames);
-console.log(allNames);
+// //concat 
+// const lastNames = ['rice', 'beans', 'yam'];
+// const allNames = names.concat(lastNames);
+// console.log(allNames);
+
+// //Reverse
+// console.log(allNames.reverse());
+
+// //unshift
+// allNames.unshift('susy');
+// allNames.unshift('anna');
+// console.log(allNames);
+
+// //shift
+// allNames.shift();
+// allNames.shift();
+// console.log(allNames);
+
+// //push
+// allNames.push('susy');
+// console.log(allNames);
+
+// //pop
+// allNames.pop();
+// console.log(allNames);
+
+// //splice - mutates original array
+// const specificNames = allNames.splice(0, 3);
+// console.log(specificNames);
+// console.log(allNames);
+
+
+// Arrays and for loop
+
+const names = ['anna', 'susy', 'bob']
+const lastName = 'vito'
+let newArray = [];
+
+//for loop
+for (let i = 0; i < names.length; i++) {
+    console.log(i);
+    console.log(names[i]);
+    const fullName = `${names[i]} ${lastName}`;
+    newArray.push(fullName);
+}
+
+console.log(names);
+console.log(newArray);
 
 
 
