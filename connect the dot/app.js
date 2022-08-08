@@ -92,41 +92,34 @@
 
 
 
-// Functions, return, if, arrays, for loop
-const gas = [20, 40, 100, 30];
-const food = [10, 40, 50];
+// // Functions, return, if, arrays, for loop
+// const gas = [20, 40, 100, 30];
+// const food = [10, 40, 50];
 
-function calculateTotal(arr) {
-    let total = 0;
-    for (let i = 0; i < arr.length; i++) {
-        total += arr[i];
-    }
-    return total;
-}
-
-
-const gasTotal = calculateTotal(gas);
-const foodTotal = calculateTotal(food);
-const randomTotal = calculateTotal([200, 4000, 500, 1]);
-
-console.log({
-    gas: gasTotal,
-    food: foodTotal,
-    random: randomTotal,
-});
+// function calculateTotal(arr) {
+//     let total = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         total += arr[i];
+//     }
+//     if (total > 100) {
+//         console.log(`Whoa! You are spending way too much`);
+//         return total;
+//     }
+//     console.log(`You are good total is less than 100`);
+    
+//     return total;
+// }
 
 
+// const gasTotal = calculateTotal(gas);
+// const foodTotal = calculateTotal(food);
+// const randomTotal = calculateTotal([200, 4000, 500, 1]);
 
-
-
-
-
-
-
-
-
-
-
+// console.log({
+//     gas: gasTotal,
+//     food: foodTotal,
+//     random: randomTotal,
+// });
 
 
 // const person = {
@@ -141,6 +134,33 @@ console.log({
 
 // console.log(person.name);
 // person.greeting();
+
+
+
+// Refernce vs Value
+// Primitive Data Types
+// String, Number, Symbol, Boolean, Undifined, Null,
+// Arrays, Functions, Obijects = object
+// typeof
+
+// when assigning primitive data type value to variable any changes are made directly to that values, without affecting original value
+
+// when assigning non-primitive data type value to the variable is done by reference so any changes will affect all the references. 
+
+const number = 1;
+let number2 = number;
+number2 = 7
+console.log(`the first value is ${number}`);
+console.log(`the second value is ${number2}`);
+
+let person = { name: 'bob' };
+let person2 = person;
+person2.name = 'susy';
+console.log(`the name of the first person is ${person.name}`);
+console.log(`the name of the second person is ${person2.name}`);
+
+
+
 
 
 
