@@ -226,25 +226,48 @@
 // can be access anywhere in the program
 // Gotchas : name collisions, modify by mistake
 
+// let name = 'bobo';
+// name = 'peter';
+
+// function calculate() {
+//     // some other code...
+//     console.log(name);
+//     name = 'orange';
+//     function inner() {
+//         name = 'inner name value';
+//         console.log(`this is from inner function ${name}`);
+//     }
+//     inner();
+// }
+// calculate();
+
+// if (true) {
+//     // some other code...
+//     console.log(name);
+//     name = 'pants';
+// }
+
+// console.log(`my name is ${name} and I'm awesome`);
+
+
+//Local Scope
+// can not be access from outside code blocks
+// if - NOT VAR
+
 let name = 'bobo';
-name = 'peter';
+
 
 function calculate() {
-    // some other code...
-    console.log(name);
-    name = 'orange';
-    function inner() {
-        name = 'inner name value';
-        console.log(`this is from inner function ${name}`);
-    }
-    inner();
+    const name = 'john';
+    const age = 24;
+    // code goes here
+    becomesGlobal = 'global variable'
 }
 calculate();
+console.log(becomesGlobal);
 
 if (true) {
-    // some other code...
-    console.log(name);
-    name = 'pants';
+    const name = 'john';
 }
 
 console.log(`my name is ${name} and I'm awesome`);
