@@ -203,12 +203,48 @@
 // }
 
 // unary operator - typeof
-let text = 'some text';
-console.log(typeof text); // operand
+// let text = 'some text';
+// console.log(typeof text); // operand
 // binary operator - assignment
-let number = 3;
-let number2 = 2 + 5;
+// let number = 3;
+// let number2 = 2 + 5;
 // ternary operator
 // condition ? (runs if true) : (runs if false)
 
+// const value = 2 < 1;
 
+// value ? console.log('value is true') : console.log('value is false');
+
+// if(value) {
+//     console.log('value is true');
+// } else{
+//     console.log('value is false');
+// }
+
+// Global Scope vs Local Scope
+// Any variable outside code block {} is said to be in Global Scope 
+// can be access anywhere in the program
+// Gotchas : name collisions, modify by mistake
+
+let name = 'bobo';
+name = 'peter';
+
+function calculate() {
+    // some other code...
+    console.log(name);
+    name = 'orange';
+    function inner() {
+        name = 'inner name value';
+        console.log(`this is from inner function ${name}`);
+    }
+    inner();
+}
+calculate();
+
+if (true) {
+    // some other code...
+    console.log(name);
+    name = 'pants';
+}
+
+console.log(`my name is ${name} and I'm awesome`);
