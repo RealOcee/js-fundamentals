@@ -1,6 +1,6 @@
 ### JS Wonderland ###
 
-Today, I begin a new journey of JS, an oddessy!.
+Today, I begin a new journey of JS, an odyssey!.
 
 Learning to learn is the very essence of this journey.
 

@@ -137,10 +137,10 @@
 
 
 
-// Refernce vs Value
+// Reference vs Value
 // Primitive Data Types
-// String, Number, Symbol, Boolean, Undifined, Null,
-// Arrays, Functions, Obijects = object
+// String, Number, Symbol, Boolean, Undefined, Null,
+// Arrays, Functions, Objects = object
 // typeof
 
 // when assigning primitive data type value to variable any changes are made directly to that values, without affecting original value
@@ -161,10 +161,10 @@
 
 
 
-// Null and Undifined 
+// Null and Undefined 
 // both represent "no value"
 
-// undifined - "javascript can not find value for this"
+// undefined - "javascript can not find value for this"
 
 
 // variable without value 
@@ -183,7 +183,7 @@
 
 
 // Truthy and Falsy
-// "", '', ``, 0, -0, NaN, false, null, undifined
+// "", '', ``, 0, -0, NaN, false, null, undefined
 
 // const bool1 = true;
 // const bool2 = 2 > 1;
@@ -224,7 +224,7 @@
 // Global Scope vs Local Scope
 // Any variable outside code block {} is said to be in Global Scope 
 // can be access anywhere in the program
-// Gotchas : name collisions, modify by mistake
+// Gotcha : name collisions, modify by mistake
 
 // let name = 'bobo';
 // name = 'peter';
@@ -254,20 +254,22 @@
 // can not be access from outside code blocks
 // if - NOT VAR
 
-let name = 'bobo';
+// let name = 'bobo';
 
 
-function calculate() {
-    const name = 'john';
-    const age = 24;
-    // code goes here
-    becomesGlobal = 'global variable'
-}
-calculate();
-console.log(becomesGlobal);
+// function calculate() {
+//     const name = 'john';
+//     const age = 24;
+//     // code goes here
+//     becomesGlobal = 'global variable'
+// }
+// calculate();
+// console.log(becomesGlobal);
 
-if (true) {
-    const name = 'john';
-}
+// if (true) {
+//     const name = 'john';
+// }
 
-console.log(`my name is ${name} and I'm awesome`);
+// console.log(`my name is ${name} and I'm awesome`);
+
+
