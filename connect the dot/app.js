@@ -332,14 +332,28 @@
 // forEach 
 // does not return new array
 
+// const people = [
+//     {name:'ocee', age:20, position: 'developer'},
+//     {name:'ik', age:23, position: 'designer'},
+//     {name:'odus', age:30, position: 'boss'},
+// ];
+
+// function showPerson(person){
+//     console.log(person.position.toUpperCase());
+// }
+
+// people.forEach(showPerson)
+
+
+
+
+// map
+// does return a new array
+// does not change size of original array
+// uses values from original array when making new one
+
 const people = [
     {name:'ocee', age:20, position: 'developer'},
     {name:'ik', age:23, position: 'designer'},
     {name:'odus', age:30, position: 'boss'},
 ];
-
-function showPerson(person){
-    console.log(person.position.toUpperCase());
-}
-
-people.forEach(showPerson)
