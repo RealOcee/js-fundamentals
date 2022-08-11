@@ -300,16 +300,46 @@
 
 // Callback Function - passed to another function as an argument and executed inside that function
 
-function morning(name) {
-    return `Good morning ${name.toUpperCase()}`;
-}
-function afternoon(name){
-    return `Good afternoon ${name.repeat(3)}`;
+// function morning(name) {
+//     return `Good morning ${name.toUpperCase()}`;
+// }
+// function afternoon(name){
+//     return `Good afternoon ${name.repeat(3)}`;
+// }
+
+// function greet(name, cb) {
+//     const myName = 'ocee';
+//     console.log(`${cb(name)}, my name is ${myName}`);
+// }
+// greet('bobo', morning);
+// greet('peter', afternoon);
+
+
+
+// Powerful Array Methods
+// forEach, map, filter, find, reduce
+// Iterate over array - no for loop required
+// Accept CALLBACK function as an argument, calls Callback against each item in array. Reference Item in the Callback Parameter.
+
+// const numbers = [0, 1, 2, 3, 4];
+
+// // show all numbers
+
+// for (let i = 0; i < numbers.length; i++) {
+//     console.log(numbers[i]);
+// }
+
+// forEach 
+// does not return new array
+
+const people = [
+    {name:'ocee', age:20, position: 'developer'},
+    {name:'ik', age:23, position: 'designer'},
+    {name:'odus', age:30, position: 'boss'},
+];
+
+function showPerson(person){
+    console.log(person.position.toUpperCase());
 }
 
-function greet(name, cb) {
-    const myName = 'ocee';
-    console.log(`${cb(name)}, my name is ${myName}`);
-}
-greet('bobo', morning);
-greet('peter', afternoon);
+people.forEach(showPerson)
