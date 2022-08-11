@@ -276,18 +276,40 @@
 // Variable Lookup
 // {} - code block
 
-const globalNumber = 5;
+// const globalNumber = 5;
 
-function add(num1, num2) {
-    // const globalNumber = 20;
-    const result = num1 + num2 + globalNumber;
-    function multiply() {
-        // const globalNumber = 100;
-        const multiplyResult = result * globalNumber;
-        console.log(multiplyResult); 
-    }
-    multiply();
-    return result;
+// function add(num1, num2) {
+//     // const globalNumber = 20;
+//     const result = num1 + num2 + globalNumber;
+//     function multiply() {
+//         // const globalNumber = 100;
+//         const multiplyResult = result * globalNumber;
+//         console.log(multiplyResult); 
+//     }
+//     multiply();
+//     return result;
+// }
+
+// console.log(add(3, 4));
+
+// Callback Functions, Higher Order Functions, Functions as First Class Objects/Citizens
+
+//Functions are first class objects - stored in a variable (expression), passed as an argument to another function, return from the function (closure)
+
+// Higher Order Function - accepts another function as an argument or returns another function as a result
+
+// Callback Function - passed to another function as an argument and executed inside that function
+
+function morning(name) {
+    return `Good morning ${name.toUpperCase()}`;
+}
+function afternoon(name){
+    return `Good afternoon ${name.repeat(3)}`;
 }
 
-console.log(add(3, 4));
+function greet(name, cb) {
+    const myName = 'ocee';
+    console.log(`${cb(name)}, my name is ${myName}`);
+}
+greet('bobo', morning);
+greet('peter', afternoon);
