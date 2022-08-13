@@ -352,8 +352,43 @@
 // does not change size of original array
 // uses values from original array when making new one
 
+// const people = [
+//     {name:'ocee', age:20, position: 'developer'},
+//     {name:'ik', age:23, position: 'designer'},
+//     {name:'odus', age:30, position: 'boss'},
+// ];
+
+// const ages = people.map(function (person) {
+//     return person.age + 20;
+// });
+// const newPeople = people.map(function (person) {
+//     return {
+//         firstName: person.name.toUpperCase(),
+//         oldAge: person.age + 20,
+//     };
+// });
+// console.log(newPeople);
+
+
+
+// filter
+// does return a new array
+// can manipulate the size of new array
+// return based on condition
+
 const people = [
     {name:'ocee', age:20, position: 'developer'},
     {name:'ik', age:23, position: 'designer'},
     {name:'odus', age:30, position: 'boss'},
+    {name:'ase', age:50, position: 'boss'},
 ];
+
+const youngPeople = people.filter(function (person) {
+    return person.age <= 25;
+});
+
+const developers = people.filter(function (person) {
+    return person.position === 'developer'
+});
+
+console.log(developers);
