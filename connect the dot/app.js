@@ -376,19 +376,41 @@
 // can manipulate the size of new array
 // return based on condition
 
+// const people = [
+//     {name:'ocee', age:20, position: 'developer'},
+//     {name:'ik', age:23, position: 'designer'},
+//     {name:'odus', age:30, position: 'boss'},
+//     {name:'ase', age:50, position: 'boss'},
+// ];
+
+// const youngPeople = people.filter(function (person) {
+//     return person.age <= 25;
+// });
+
+// const developers = people.filter(function (person) {
+//     return person.position === 'developer'
+// });
+
+// console.log(developers);
+
+
+
+
+// find 
+// returns single instance - (in this case object)
+// returns first match, if no match undefined
+// greet for getting unique value
+
 const people = [
-    {name:'ocee', age:20, position: 'developer'},
-    {name:'ik', age:23, position: 'designer'},
-    {name:'odus', age:30, position: 'boss'},
-    {name:'ase', age:50, position: 'boss'},
+    {name:'ocee', age:20, position: 'developer', id:1},
+    {name:'ik', age:23, position: 'designer',id:2},
+    {name:'odus', age:30, position: 'boss', id:3},
+    {name:'ase', age:50, position: 'boss', id:4},
 ];
 
-const youngPeople = people.filter(function (person) {
-    return person.age <= 25;
+const person = people.find(function (person) {
+    return person.id === 3;
 });
 
-const developers = people.filter(function (person) {
-    return person.position === 'developer'
-});
+console.log(person);
 
-console.log(developers);
