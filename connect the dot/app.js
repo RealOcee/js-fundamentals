@@ -401,16 +401,36 @@
 // returns first match, if no match undefined
 // greet for getting unique value
 
+// const people = [
+//     {name:'ocee', age:20, position: 'developer', id:1},
+//     {name:'ik', age:23, position: 'designer',id:2},
+//     {name:'odus', age:30, position: 'boss', id:3},
+//     {name:'ase', age:50, position: 'boss', id:4},
+// ];
+// const names = [ 'bob', 'peter', 'susy'];
+// const person = people.find(function (person) {
+//     return person.id === 3;
+// });
+
+// console.log(names.find(function (name) {
+//     return name === 'bob';
+// })
+// );
+
+// console.log(person);
+
+
+
+
+// reduce
+// iterates, callback function
+// reduces to a single value - number, array, object
+// 1 parameter ('acc') - total of all calculations
+// 2 parameter ('curr') - current iteration/value
+
 const people = [
     {name:'ocee', age:20, position: 'developer', id:1},
     {name:'ik', age:23, position: 'designer',id:2},
     {name:'odus', age:30, position: 'boss', id:3},
     {name:'ase', age:50, position: 'boss', id:4},
 ];
-
-const person = people.find(function (person) {
-    return person.id === 3;
-});
-
-console.log(person);
-
