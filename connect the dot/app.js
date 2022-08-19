@@ -428,9 +428,44 @@
 // 1 parameter ('acc') - total of all calculations
 // 2 parameter ('curr') - current iteration/value
 
-const people = [
-    {name:'ocee', age:20, position: 'developer', id:1},
-    {name:'ik', age:23, position: 'designer',id:2},
-    {name:'odus', age:30, position: 'boss', id:3},
-    {name:'ase', age:50, position: 'boss', id:4},
-];
+// const people = [
+//     { name:'ocee', age:20, position: 'developer', id:1, salary:200},
+//     { name:'ik', age:23, position: 'designer',id:2, salary:300},
+//     { name:'odus', age:30, position: 'boss', id:3, salary:500},
+//     { name:'ase', age:50, position: 'boss', id:4, salary:500},
+// ];
+
+// const total = people.reduce(function (acc, currItem) {
+//     console.log(`total ${acc}`);
+//     console.log(`current money : ${currItem.salary}`);
+//     acc += currItem.salary
+//     return acc;
+// }, 0);
+
+// console.log(total);
+
+
+
+
+// Math
+// Standard built-in objects - always available 
+
+// const number = 4.56789;
+// const result = Math.floor(number);
+
+// const number = 4.12222;
+// const result = Math.ceil(number);
+
+// const number = 89;
+// const result = Math.sqrt(number);
+
+// const result = Math.PI;
+
+// const result = Math.min(4, 5, 6, 7, 9);
+// const result = Math.max(4, 5, 6, 7, 9, 345, 600);
+
+const result = Math.floor(Math.random() * 10);
+
+
+
+console.log(result);
