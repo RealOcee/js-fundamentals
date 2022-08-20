@@ -60,9 +60,37 @@
 // node-list = array-like object
 // index, length property but not array methods
 
-const headings = document.getElementsByTagName('h2');
-headings[0].style.color = 'red';
-console.log(headings.length);
+// const headings = document.getElementsByTagName('h2');
+// headings[0].style.color = 'red';
+// console.log(headings.length);
 
+
+
+// Select the element or group of elements the we want
+// Decide the effect we want to apply to the selection
+
+// getElementsByClassName('classname');
+
+// node-list = array-like object
+// index, length property but not array methods
+
+// const listItems = document.getElementsByClassName('special');
+// listItems[1].style.color = 'blue';
+
+// Select the element or group of elements the we want
+// Decide the effect we want to apply to the selection
+
+
+// querySelector('any css'); - selects single
+// querySelectorAll('any css') - selects all
+
+const result = document.querySelector('#result');
+result.style.backgroundColor = 'blue';
+
+const item = document.querySelector('.special');
+console.log(item);
+
+const lastItem = document.querySelector('li:last-child');
+console.log(lastItem);
 
 
