@@ -198,27 +198,54 @@
 // classList
 
 
-const first = document.getElementById('first');
-const second = document.getElementById('second');
-const third = document.getElementById('third');
+// const first = document.getElementById('first');
+// const second = document.getElementById('second');
+// const third = document.getElementById('third');
 
-// const classValue = first.className;
-// console.log(classValue);
+// // const classValue = first.className;
+// // console.log(classValue);
 
-second.className = 'colors text';
+// second.className = 'colors text';
 
-// third.classList.add('colors');
+// // third.classList.add('colors');
+// // third.classList.remove('text');
+// third.classList.add('text', 'colors');
 // third.classList.remove('text');
-third.classList.add('text', 'colors');
-third.classList.remove('text');
 
 
-let result = third.classList.contains('colors');
-if (result) {
-    console.log('hello world');
-} else {
-    console.log('does not have the class');
-}
+// let result = third.classList.contains('colors');
+// if (result) {
+//     console.log('hello world');
+// } else {
+//     console.log('does not have the class');
+// }
 
 
 
+
+
+
+// createElement('element')
+// createTextNode('text content')
+// element.appendChild(childElement)
+
+const result = document.querySelector('#result');
+
+// create empty element
+
+const bodyDiv = document.createElement('div');
+
+// create text node
+
+const text = document.createTextNode('a simple body div');
+bodyDiv.appendChild(text);
+document.body.appendChild(bodyDiv);
+
+const heading = document.createElement('h2');
+const headingText = document.createTextNode('dynamic heading');
+heading.appendChild(headingText);
+heading.classList.add('blue');
+
+result.appendChild(heading);
+
+console.log(result.children);
