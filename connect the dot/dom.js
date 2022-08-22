@@ -174,21 +174,51 @@
 // getAttribute();
 // setAttribute();
 
-const first = document.querySelector('.first');
-const classValue = first.getAttribute('class');
+// const first = document.querySelector('.first');
+// const classValue = first.getAttribute('class');
+// // console.log(classValue);
+
+// const link = document.getElementById('link');
+// const showLink = link.getAttribute('href');
+// console.log(showLink);
+
+// const last = link.nextElementSibling;
+// last.setAttribute('class', 'first');
+// last.textContent = 'I also have a class of first';
+// console.log(last);
+
+// const links = document.querySelectorAll('.first');
+// console.log(links);
+
+
+
+
+
+// className
+// classList
+
+
+const first = document.getElementById('first');
+const second = document.getElementById('second');
+const third = document.getElementById('third');
+
+// const classValue = first.className;
 // console.log(classValue);
 
-const link = document.getElementById('link');
-const showLink = link.getAttribute('href');
-console.log(showLink);
+second.className = 'colors text';
 
-const last = link.nextElementSibling;
-last.setAttribute('class', 'first');
-last.textContent = 'I also have a class of first';
-console.log(last);
+// third.classList.add('colors');
+// third.classList.remove('text');
+third.classList.add('text', 'colors');
+third.classList.remove('text');
 
-const links = document.querySelectorAll('.first');
-console.log(links);
+
+let result = third.classList.contains('colors');
+if (result) {
+    console.log('hello world');
+} else {
+    console.log('does not have the class');
+}
 
 
 
