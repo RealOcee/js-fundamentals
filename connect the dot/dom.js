@@ -298,8 +298,21 @@
 // remove
 // removeChild
 
-const result = document.querySelector('#result');
-// result.remove();
-const heading = result.querySelector('h1');
-result.removeChild(heading);
-console.log(heading);
+// const result = document.querySelector('#result');
+// // result.remove();
+// const heading = result.querySelector('h1');
+// result.removeChild(heading);
+// console.log(heading);
+
+
+
+
+// CSS
+
+const random = document.querySelector('.random');
+
+random.classList.add('title');
+
+
+
+
