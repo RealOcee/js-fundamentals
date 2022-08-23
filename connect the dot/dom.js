@@ -257,26 +257,38 @@
 // element.appendChild(childElement)
 
 
-// insertBefore('element', 'location');
+// // insertBefore('element', 'location');
 
- const result = document.querySelector('#result');
+//  const result = document.querySelector('#result');
 
-// // create empty element
+// // // create empty element
 
-const bodyDiv = document.createElement('div');
+// const bodyDiv = document.createElement('div');
 
-// // create text node
+// // // create text node
 
-const text = document.createTextNode('a simple body div');
-bodyDiv.appendChild(text);
+// const text = document.createTextNode('a simple body div');
+// bodyDiv.appendChild(text);
+
+
+// const heading = document.createElement('h2');
+// const headingText = document.createTextNode('dynamic heading');
+// heading.appendChild(headingText);
+// heading.classList.add('blue');
+
+
+
+// console.log(result.children);
+
+
+
+
+
+// prepend
+// innerText
 
 
 const heading = document.createElement('h2');
-const headingText = document.createTextNode('dynamic heading');
-heading.appendChild(headingText);
-heading.classList.add('blue');
-
-
-
-console.log(result.children);
+heading.innerText = `i am a dynamic heading`;
+document.body.prepend(heading);
 
