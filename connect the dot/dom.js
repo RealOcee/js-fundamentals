@@ -326,6 +326,8 @@
 
 
 
+
+
 // Web Storage API - provided by browser
 // session storage, local storage
 // setItem, getItem, removeItem, clear
@@ -333,17 +335,51 @@
 // localStorage.setItem('name', 'john');
 // sessionStorage.setItem('name', 'john');
 
-localStorage.setItem('name', 'john');
-localStorage.setItem('friend', 'peter');
-localStorage.setItem('job', 'developer');
-localStorage.setItem('address', 'street 123');
+// localStorage.setItem('name', 'john');
+// localStorage.setItem('friend', 'peter');
+// localStorage.setItem('job', 'developer');
+// localStorage.setItem('address', 'street 123');
 
-const name = localStorage.getItem('name');
-console.log(name);
-localStorage.removeItem('name');
-const anotherName = localStorage.getItem('name');
-console.log(anotherName);
-localStorage.clear();
+// const name = localStorage.getItem('name');
+// console.log(name);
+// localStorage.removeItem('name');
+// const anotherName = localStorage.getItem('name');
+// console.log(anotherName);
+// localStorage.clear();
+
+
+
+
+
+
+
+// JSON.stringify(), JSON.parse()
+
+
+const friends = ['john', 'peter', 'bob'];
+
+localStorage.setItem('friend', JSON.stringify(friends));
+
+const values = JSON.parse(localStorage.getItem('friends'));
+console.log(values);
+
+let fruits;
+
+if(localStorage.getItem('fruits')){
+
+}
+
+else{
+    fruits = [];
+}
+
+console.log(fruits);
+fruits.push('apple');
+
+localStorage.setItem('fruits', JSON.stringify(fruits));
+
+
+//  END OF JS FUNDAMENTAL 
 
 
 
